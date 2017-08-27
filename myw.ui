@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyW</class>
+ <widget class="QMainWindow" name="MyW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1004</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyW</string>
+  </property>
+  <widget class="QWidget" name="myArea">
+   <widget class="QLabel" name="srcPic">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>951</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>当前图像 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="jiaMi">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>加密！</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="jieMi">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>解密！</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="savePic">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>存盘</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="backSrc">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>返回原图</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="View">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看加密序列</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>60</y>
+      <width>251</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 0, 255);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1004</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件（&amp;F）</string>
+    </property>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+    <addaction name="separator"/>
+    <addaction name="goSrc"/>
+    <addaction name="CleanS"/>
+    <addaction name="exitMe"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助（&amp;H）</string>
+    </property>
+    <addaction name="banQuan"/>
+    <addaction name="aboutMe"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>矩阵加密（&amp;J）</string>
+    </property>
+    <addaction name="jiaMiAction"/>
+    <addaction name="JieMiAction"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="openFile">
+   <property name="text">
+    <string>打开图片</string>
+   </property>
+  </action>
+  <action name="CleanS">
+   <property name="text">
+    <string>清空图像区域</string>
+   </property>
+  </action>
+  <action name="exitMe">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="banQuan">
+   <property name="text">
+    <string>版权声明</string>
+   </property>
+  </action>
+  <action name="aboutMe">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="jiaMiAction">
+   <property name="text">
+    <string>图像加密</string>
+   </property>
+  </action>
+  <action name="JieMiAction">
+   <property name="text">
+    <string>
+图像解密</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>保存当前图像(&amp;S)</string>
+   </property>
+  </action>
+  <action name="goSrc">
+   <property name="text">
+    <string>查看原图(&amp;Y)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
